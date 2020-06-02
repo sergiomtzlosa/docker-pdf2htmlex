@@ -1,0 +1,1 @@
+alias pdf2htmlEX='docker run -ti --rm -v `pwd`:/pdf sergiomtzlosa/pdf2htmlex pdf2htmlEX'

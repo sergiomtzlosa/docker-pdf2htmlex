@@ -1,0 +1,5 @@
+sudo apt-get install debootstrap
+
+sudo debootstrap trusty trusty http://us.archive.ubuntu.com/ubuntu
+
+sudo tar -f rootfs-trusty.tar.xz -C trusty -c .
