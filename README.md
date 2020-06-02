@@ -26,3 +26,31 @@ pdf2htmlEX --zoom 1.3 test.pdf
 For detail instrucitons check the repository: 
 
 https://github.com/sergiomtzlosa/docker-pdf2htmlEX
+
+Inside the offline folder there is a way to create the image in a standalone way, you must obtain the Ubuntu Trusty base image using debootstap:
+
+```
+sudo apt-get install debootstrap
+```
+```
+sudo debootstrap trusty trusty http://us.archive.ubuntu.com/ubuntu
+```
+```
+sudo tar -f rootfs-trusty.tar.xz -C trusty -c .
+```
+
+Afterward, you can build the image:
+
+```
+docker build -t pdf2htmlex .
+```
+
+Otherwise, use the full online building process from the master branch, just type:
+
+```
+docker build -t pdf2htmlex .
+```
+
+After building the image use the command above to convert PDF files into HTML.
+
+Dockerhib: https://hub.docker.com/r/sergiomtzlosa/pdf2htmlex
