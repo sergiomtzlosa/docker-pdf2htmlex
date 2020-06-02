@@ -17,13 +17,13 @@ alias pdf2htmlEX='docker run -ti --rm -v `pwd`:/pdf sergiomtzlosa/pdf2htmlex pdf
 
 Use the alias on your bash prompt:
 ```
-pdf2htmlEX -h 
+pdf2htmlEX -h
 ```
 ```
 pdf2htmlEX --zoom 1.3 test.pdf
 ```
 
-For detail instrucitons check the repository: 
+For detail instructions check the repository:
 
 https://github.com/sergiomtzlosa/docker-pdf2htmlEX
 
@@ -53,4 +53,4 @@ docker build -t pdf2htmlex .
 
 After building the image use the command above to convert PDF files into HTML.
 
-Dockerhib: https://hub.docker.com/r/sergiomtzlosa/pdf2htmlex
+Dockerhub: https://hub.docker.com/r/sergiomtzlosa/pdf2htmlex
