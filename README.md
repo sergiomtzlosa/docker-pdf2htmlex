@@ -53,4 +53,10 @@ docker build -t pdf2htmlex .
 
 After building the image use the command above to convert PDF files into HTML.
 
+You can also pull from the dockerhub repo:
+
+```
+docker pull sergiomtzlosa/pdf2htmlex:latest
+```
+
 Dockerhub: https://hub.docker.com/r/sergiomtzlosa/pdf2htmlex
