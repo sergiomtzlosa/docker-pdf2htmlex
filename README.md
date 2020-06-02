@@ -23,10 +23,6 @@ pdf2htmlEX -h
 pdf2htmlEX --zoom 1.3 test.pdf
 ```
 
-For detail instructions check the repository:
-
-https://github.com/sergiomtzlosa/docker-pdf2htmlEX
-
 Inside the offline folder there is a way to create the image in a standalone way, you must obtain the Ubuntu Trusty base image using debootstap:
 
 ```
