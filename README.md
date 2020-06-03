@@ -35,7 +35,7 @@ sudo debootstrap trusty trusty http://us.archive.ubuntu.com/ubuntu
 sudo tar -f rootfs-trusty.tar.xz -C trusty -c .
 ```
 
-Afterward, you can build the image:
+Afterwards, you can build the image:
 
 ```
 docker build -t pdf2htmlex .
