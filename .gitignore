@@ -2,3 +2,6 @@ offline/rootfs-trusty.tar.xz
 .DS_Store
 report.pdf
 report.html
+offline/fontforge
+offline/pdf2htmlEX
+offline/commands.txt

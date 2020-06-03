@@ -15,19 +15,19 @@ RUN apt-get install -y poppler-data autotools-dev libjpeg-dev libtiff4-dev libpn
 		       sudo packaging-dev pkg-config python-dev g++ xz-utils wget
 
 ADD poppler-0.26.5.tar.xz /
-RUN cd poppler-0.26.5 && ./configure --prefix=/usr --enable-xpdf-headers && make && make install
+RUN cd / && cd poppler-0.26.5 && ./configure --prefix=/usr --enable-xpdf-headers && make && make install
 
 ADD freetype-2.6.3.tar.gz /
-RUN  cd freetype-2.6.3 && ./configure && make && make install
+RUN cd / && cd freetype-2.6.3 && ./configure && make && make install
 
 ADD fontconfig-2.12.0.tar.bz2 /
-RUN cd fontconfig-2.12.0 && ./configure && make && make install
+RUN cd / && cd fontconfig-2.12.0 && ./configure && make && make install
 
-RUN git clone https://github.com/coolwanglu/fontforge.git fontforge && cd fontforge && git checkout pdf2htmlEX && \
-    ./autogen.sh && ./configure --prefix=/usr && make && make install && ldconfig
+ADD fontforge.tar.gz /
+RUN cd / && cd fontforge && ./autogen.sh && ./configure --prefix=/usr && make && make install && ldconfig
 
-RUN git clone --depth=1 git://github.com/coolwanglu/pdf2htmlEX.git && \
-    cd pdf2htmlEX && cmake . -DENABLE_SVG=ON && make && make install
+ADD pdf2htmlEX.tar.gz /
+RUN cd / && cd pdf2htmlEX && cmake . -DENABLE_SVG=ON && make && make install
 
 RUN rm /usr/sbin/invoke-rc.d
 RUN dpkg-divert --rename --remove /usr/sbin/invoke-rc.d
