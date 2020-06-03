@@ -55,5 +55,4 @@ You can also pull from the dockerhub repo:
 docker pull sergiomtzlosa/pdf2htmlex:latest
 ```
 
-
 Dockerhub: https://hub.docker.com/r/sergiomtzlosa/pdf2htmlex
