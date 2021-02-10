@@ -1,4 +1,4 @@
-# Docker source image to convert PDFs into beautiful HTML
+# Docker image to convert PDFs into beautiful HTML
 
 Suppose you have a PDF file ~/pdf/test.pdf, simply place on your pdf file path and type:
 
